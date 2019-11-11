@@ -1,45 +1,46 @@
 {
-  "form": [
-    "onblur",
-    "onchange",
-    "oncontextmenu",
-    "onfocus",
-    "oninput",
-    "oninvalid",
-    "onreset",
-    "onsearch",
-    "onselect",
-    "onsubmit"
-  ],
-  "keyboard": [
-    "onkeydown",
-    "onkeypress",
-    "onkeyup"
-  ],
-  "mouse": [
-    "onclick",
-    "ondblclick",
-    "onmousedown",
-    "onmousemove",
-    "onmouseout",
-    "onmouseover",
-    "onmouseup",
-    "onmousewheel",
-    "onwheel"
-  ],
-  "drag": [
-    "ondrag",
-    "ondragend",
-    "ondragenter",
-    "ondragleave",
-    "ondragover",
-    "ondragstart",
-    "ondrop",
-    "onscroll"
-  ],
-  "clipboard": [
-    "oncopy",
-    "oncut",
-    "onpaste"
-  ]
+    "form": [
+        "onBlur",
+        "onChange",
+        "onContextMenu",
+        "onFocus",
+        "onInput",
+        "onInvalid",
+        "onReset",
+        "onSearch",
+        "onSelect",
+        "onSubmit"
+    ],
+    "keyboard": [
+        "onKeyDown",
+        "onKeyPress",
+        "onKeyUp"
+    ],
+    "mouse": [
+        "onClick",
+        "onDoubleClick",
+        "onMouseDown",
+        "onMouseMove",
+        "onMouseOut",
+        "onMouseOver",
+        "onMouseUp",
+        "onMouseWheel",
+        "onWheel"
+    ],
+    "drag": [
+        "onDrag",
+        "onDragEnd",
+        "onDragEnter",
+        "onDragLeave",
+        "onDragOver",
+        "onDragStart",
+        "onDrop",
+        "onScroll"
+    ],
+    "clipboard": [
+        "onCopy",
+        "onCut",
+        "onPaste"
+    ]
 }
+  
