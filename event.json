@@ -1,0 +1,45 @@
+{
+  "form": [
+    "onblur",
+    "onchange",
+    "oncontextmenu",
+    "onfocus",
+    "oninput",
+    "oninvalid",
+    "onreset",
+    "onsearch",
+    "onselect",
+    "onsubmit"
+  ],
+  "keyboard": [
+    "onkeydown",
+    "onkeypress",
+    "onkeyup"
+  ],
+  "mouse": [
+    "onclick",
+    "ondblclick",
+    "onmousedown",
+    "onmousemove",
+    "onmouseout",
+    "onmouseover",
+    "onmouseup",
+    "onmousewheel",
+    "onwheel"
+  ],
+  "drag": [
+    "ondrag",
+    "ondragend",
+    "ondragenter",
+    "ondragleave",
+    "ondragover",
+    "ondragstart",
+    "ondrop",
+    "onscroll"
+  ],
+  "clipboard": [
+    "oncopy",
+    "oncut",
+    "onpaste"
+  ]
+}
