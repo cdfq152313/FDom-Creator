@@ -137,7 +137,7 @@ String funTemplate(
   return """  
   static ReactElement $tag({child, List children, List<CssDecoration> cssDecoration, $attrParas, $eventParams}){
     final instance = Dom.$tag()$attrBuilders $eventBuilders;
-    return children != null ? IdiotUtil.build(instance, children: children, cssDecoration: cssDecoration) : IdiotUtil.build(instance, child: child, cssDecoration: cssDecoration);
+    return ReactUtil.build(instance, child:child, children: children, cssDecoration: cssDecoration);
   }
 """;
 }
@@ -147,7 +147,7 @@ String fileTemplate(List<String> content) {
 /// flutter-like style dom
 import 'package:over_react/over_react.dart';
 import 'package:velodash_web/src/css/css_decoration.dart';
-import 'package:velodash_web/src/util/idiot_util.dart';
+import 'package:velodash_web/src/util/react_util.dart';
 
 abstract class FDom {
 ${content.join()}
