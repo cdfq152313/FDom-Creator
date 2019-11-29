@@ -135,9 +135,9 @@ String funTemplate(
       )
       .join(" ");
   return """  
-  static ReactElement $tag({child, List children, List<CssDecoration> cssDecoration, $attrParas, $eventParams}){
+  static ReactElement $tag({children, List<CssDecoration> cssDecoration, $attrParas, $eventParams}){
     final instance = Dom.$tag()$attrBuilders $eventBuilders;
-    return ReactUtil.build(instance, child:child, children: children, cssDecoration: cssDecoration);
+    return ReactUtil.build(instance, children: children, cssDecoration: cssDecoration);
   }
 """;
 }
