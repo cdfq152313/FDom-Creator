@@ -81,12 +81,13 @@ void fprint(str) {
 }
 
 main(List<String> args) {
-  f = File("f_dom.dart");
+  f = File('output/f_dom.dart');
   sink = f.openWrite();
-  final _attrMap = jsonDecode(File("attr.json").readAsStringSync()) as Map;
+  final _attrMap = jsonDecode(File('res/attr.json').readAsStringSync()) as Map;
   final attrMap = _attrMap.map(
       (key, value) => MapEntry(key as String, (value as List).cast<String>()));
-  final _eventMap = jsonDecode(File("event.json").readAsStringSync()) as Map;
+  final _eventMap =
+      jsonDecode(File('res/event.json').readAsStringSync()) as Map;
   final eventMap = _eventMap.map(
       (key, value) => MapEntry(key as String, (value as List).cast<String>()));
 
