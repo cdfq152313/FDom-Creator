@@ -135,22 +135,19 @@ String funTemplate(
       )
       .join(" ");
   return """  
-  static ReactElement $tag({children, List<CssDecoration> cssDecoration, $attrParas, $eventParams}){
-    final instance = Dom.$tag()$attrBuilders $eventBuilders;
-    return ReactUtil.build(instance, children: children, cssDecoration: cssDecoration);
-  }
-""";
+  static ReactElement $tag({children, $attrParas, $eventParams}){
+    final props = Dom.$tag()$attrBuilders $eventBuilders;
+    return children == null ? props() : props(children);
+  }""";
 }
 
 String fileTemplate(List<String> content) {
   return """
 /// flutter-like style dom
 import 'package:over_react/over_react.dart';
-import 'package:velodash_web/src/css/css_decoration.dart';
-import 'package:velodash_web/src/util/react_util.dart';
 
 abstract class FDom {
-${content.join()}
+${content.join("\n\n")}
 }
 """;
 }
