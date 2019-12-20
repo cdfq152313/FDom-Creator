@@ -2,6 +2,12 @@ import 'dart:convert';
 
 import 'dart:io';
 
+final reactAttrs = [
+  "children",
+  "key",
+  "ref",
+];
+
 final excludedAttrs = {
   "data-*",
   "ping",
@@ -135,7 +141,7 @@ String funTemplate(
       )
       .join(" ");
   return """  
-  static ReactElement $tag({children, $attrParas, $eventParams}){
+  static ReactElement $tag({${reactAttrs.join(', ')}, $attrParas, $eventParams}){
     final props = Dom.$tag()$attrBuilders $eventBuilders;
     return children == null ? props() : props(children);
   }""";
