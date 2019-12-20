@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'dart:io';
 
 final reactAttrs = [
-  "children",
   "key",
   "ref",
 ];
@@ -141,9 +140,11 @@ String funTemplate(
         (event) => "..$event=$event",
       )
       .join(" ");
+  final reactParams = reactAttrs.join(', ');
+  final reactBuilders = reactAttrs.map((attr) => '..$attr=$attr').join(' ');
   return """  
-  static ReactElement $tag({${reactAttrs.join(', ')}, $attrParas, $eventParams}){
-    final props = Dom.$tag()$attrBuilders $eventBuilders;
+  static ReactElement $tag({children, $reactParams, $attrParas, $eventParams}){
+    final props = Dom.$tag()$reactBuilders $attrBuilders $eventBuilders;
     return children == null ? props() : props(children);
   }""";
 }
