@@ -2,160 +2,65 @@ import 'dart:convert';
 
 import 'dart:io';
 
-final reactAttrs = [
-  "key",
-  "ref",
-];
-
-final excludedAttrs = {
-  "data-*",
-  "ping",
-  "dropZone",
-  "itemProp",
-  "buffered",
-  "cite",
-  "align",
-  "formaction",
-  "headers",
-  "pubdate",
-  "srcLang",
-  "kind",
-  "challenge",
-  "keytype",
-  "dirname",
-  "summary",
-  "scoped",
-  "high",
-  "low",
-  "optimum",
-  "language",
-  "wrap",
-  "ismap",
-  "reversed",
-  "autoSave",
-};
-
-final boolAttrs = {
-  "hidden",
-  "loop",
-  "autoPlay",
-  "controls",
-  "disabled",
-  "autoFocus",
-  "required",
-  "readOnly",
-  "async",
-  "defer",
-  "checked",
-  "autoComplete",
-  "selected",
-  "multiple",
-  "seamless",
-  "open",
-  "noValidate"
-};
-
-final intAttrs = {
-  "span",
-  "cols",
-  "rows",
-  "start",
-  "size",
-};
-
-final strAttrs = {
-  "className",
-  "id",
-  "title",
-};
-
-final excludedEvent = {"onInvalid", "onSearch", "onSelect", "onMouseWheel"};
-
 File f;
 IOSink sink;
 
 void fprint(str) {
-  // print(str);
   sink.write("$str");
 }
 
 main(List<String> args) {
   f = File('output/f_dom.dart');
   sink = f.openWrite();
-  final _attrMap = jsonDecode(File('res/attr.json').readAsStringSync()) as Map;
-  final attrMap = _attrMap.map(
-      (key, value) => MapEntry(key as String, (value as List).cast<String>()));
-  final _eventMap =
-      jsonDecode(File('res/event.json').readAsStringSync()) as Map;
-  final eventMap = _eventMap.map(
-      (key, value) => MapEntry(key as String, (value as List).cast<String>()));
+  final fieldInput = File('res/props_mixin').readAsStringSync();
+  var regex = RegExp(r'(\w+)\s+get\s+(\w+)\s+=>');
+  var matches = regex.allMatches(fieldInput);
 
-  final funcs = attrMap.keys.map((tag) {
-    return funTemplate(tag, attrMap[tag], eventMap);
-  }).toList();
-  final result = fileTemplate(funcs);
-  fprint(result);
-  sink.close();
-}
+  final fields = matches.map((match) {
+    final name = match.group(2);
+    final type = name == 'children' ? 'dynamic' : match.group(1);
+    return Field(type, name);
+  }).toSet();
+  fields.add(Field('Map<String, String>', 'style'));
 
-String funTemplate(
-  String tag,
-  List<String> _attrs,
-  Map<String, List<String>> eventMap,
-) {
-  final attrs = _attrs
-      .where(
-        (attr) => !excludedAttrs.contains(attr),
-      )
-      .toList();
-  final attrParas = attrs.map(
-    (attr) {
-      if (attr == "style") {
-        return "Map $attr";
-      } else if (boolAttrs.contains(attr)) {
-        return "bool $attr";
-      } else if (intAttrs.contains(attr)) {
-        return "int $attr";
-      } else if (strAttrs.contains(attr)) {
-        return "String $attr";
-      } else {
-        return "$attr";
-      }
-    },
-  ).join(", ");
-  final attrBuilders = attrs
-      .map(
-        (attr) => "..$attr=$attr",
-      )
-      .join(" ");
-  final events = eventMap.values.expand((e) => e).toList();
-  final eventParams = events
-      .map(
-        (event) => "Function(SyntheticEvent) $event",
-      )
-      .join(", ");
-  final eventBuilders = events
-      .where((event) => !excludedEvent.contains(event))
-      .map(
-        (event) => "..$event=$event",
-      )
-      .join(" ");
-  final reactParams = reactAttrs.join(', ');
-  final reactBuilders = reactAttrs.map((attr) => '..$attr=$attr').join(' ');
-  return """  
-  static ReactElement $tag({children, $reactParams, $attrParas, $eventParams}){
-    final props = Dom.$tag()$reactBuilders $attrBuilders $eventBuilders;
+  final params =
+      fields.map((field) => '${field.type} ${field.name}').join(', ');
+  final builder = fields
+      .where((field) => field.name != 'children')
+      .map((field) => '..${field.name}=${field.name}')
+      .join(' ');
+
+  final tagInput = File('res/dom').readAsStringSync();
+  regex = RegExp(r'static\s+DomProps\s+(\w+)(\s)*\(');
+  matches = regex.allMatches(tagInput);
+  final tags = matches.map((match) => match.group(1)).toList();
+
+  final content = tags.map((tag) {
+    return '''
+  static ReactElement $tag({$params}) {
+    final props = Dom.$tag()$builder;
     return children == null ? props() : props(children);
-  }""";
-}
+  }''';
+  }).toList();
 
-String fileTemplate(List<String> content) {
-  return """
+  fprint("""
 /// flutter-like style dom
 import 'package:over_react/over_react.dart';
 
-abstract class FDom {
+class FDom {
+  FDom._();
+
 ${content.join("\n\n")}
 }
-""";
+""");
+  sink.close();
+}
+
+class Field {
+  Field(this.type, this.name);
+  final String type;
+  final String name;
+
+  @override
+  int get hashCode => name.hashCode;
 }

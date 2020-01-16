@@ -1,0 +1,464 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "analyzer",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/analyzer-0.38.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/args-1.5.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "async",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/async-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "boolean_selector",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/boolean_selector-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "build",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/build-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/built_collection-4.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "built_redux",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/built_redux-7.5.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/built_value-7.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "charcode",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "1.0"
+    },
+    {
+      "name": "cli_repl",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/cli_repl-0.2.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.20"
+    },
+    {
+      "name": "collection",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/collection-1.14.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "colorize",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/colorize-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.17"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/coverage-0.13.3+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "csslib",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/csslib-0.16.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "dart2_constant",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/dart2_constant-1.0.2+dart2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "dart_style",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/dart_style-1.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "fixnum",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/fixnum-0.10.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "front_end",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/front_end-0.1.27",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/glob-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "html",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/html-0.14.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/http-0.12.0+4",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/http_multi_server-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/intl-0.15.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/io-0.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "kernel",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/kernel-0.3.27",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/logging-0.11.3+2",
+      "packageUri": "lib/",
+      "languageVersion": "1.5"
+    },
+    {
+      "name": "matcher",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/meta-1.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "1.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/mime-0.9.6+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "multi_server_socket",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/multi_server_socket-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "node_interop",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/node_interop-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "node_io",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/node_io-1.0.1+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/node_preamble-1.4.8",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
+      "name": "over_react",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/over_react-3.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/package_config-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "package_resolver",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/package_resolver-1.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "path",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/path-1.6.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "pedantic",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "platform_detect",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/platform_detect-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "pool",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/pool-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/pub_semver-1.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "1.0"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.2+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "react",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/react-5.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "redux",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/redux-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
+      "name": "redux_dev_tools",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/redux_dev_tools-0.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "sass",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/sass-1.24.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/shelf-0.7.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/shelf_packages_handler-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "1.22"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/shelf_static-0.2.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/shelf_web_socket-0.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "source_gen",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/source_gen-0.9.4+6",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/source_map_stack_trace-1.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "1.8"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/source_maps-0.10.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "source_span",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/source_span-1.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "stack_trace",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "1.23"
+    },
+    {
+      "name": "stream_channel",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "stream_transform",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/stream_transform-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "string_scanner",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "term_glyph",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "1.8"
+    },
+    {
+      "name": "test",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/test-1.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "test_api",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/test_core-0.2.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
+      "name": "transformer_utils",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/transformer_utils-0.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "tuple",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/tuple-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "typed_data",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "vm_service",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/vm_service-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "w_common",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/w_common-1.20.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
+      "name": "w_flux",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/w_flux-2.10.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/watcher-0.9.7+13",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///Users/denny/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "playground",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    }
+  ],
+  "generated": "2020-01-16T10:18:24.020174Z",
+  "generator": "pub",
+  "generatorVersion": "2.7.0"
+}
